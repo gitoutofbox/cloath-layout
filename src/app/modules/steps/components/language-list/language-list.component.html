@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let item of languages; let i = index">
+    <div>
+      <a routerLink="../select-user"><span class="logo"><img src="{{item.logo}}" /></span> {{item.displayText}}</a>
+    </div>
+  </li>
+</ul>
