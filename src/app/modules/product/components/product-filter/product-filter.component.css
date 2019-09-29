@@ -1,0 +1,7 @@
+.product-filter {
+  text-align: right;
+}
+.product-filter .dropdown {
+  width: auto;
+  float: right;
+}

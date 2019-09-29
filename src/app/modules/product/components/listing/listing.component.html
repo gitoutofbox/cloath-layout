@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-sm-4 product-main" *ngFor="let item of products; let i = index">
+
+        <a routerdivnk="../select-user">
+            <div class="product-image"><img src="{{item.image}}" /></div>
+        </a>
+        <!-- <div class="product-name">{{item.name}}</div> -->
+        <div class="product-desc">{{item.desc}}</div>
+        <div class="row no-gutters">
+            <div class="product-price col-sm-9">{{item.price | currency}}</div>
+            <div class="add-remove-icon ml-auto"><a href="">Add</a></div>
+        </div>
+    </div>
+</div>

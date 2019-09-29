@@ -1,0 +1,10 @@
+<ul class="category-main">
+    <li *ngFor="let category of categories; let i = index">
+        <div>{{category.name}}</div>
+        <ul>
+            <li *ngFor="let item of category.subCategory;">
+                <a href="">{{item.name}}</a>
+            </li>
+        </ul>
+    </li>
+</ul>
