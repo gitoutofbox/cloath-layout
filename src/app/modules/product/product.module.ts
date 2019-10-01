@@ -6,11 +6,12 @@ import { ProductListComponent } from './pages/product-list/product-list.componen
 import { ListingComponent } from './components/listing/listing.component';
 import { ProductCategoryComponent } from './components/product-category/product-category.component';
 import { ProductFilterComponent } from './components/product-filter/product-filter.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 
 
 @NgModule({
-  declarations: [ProductListComponent, ListingComponent, ProductCategoryComponent, ProductFilterComponent],
+  declarations: [ProductListComponent, ListingComponent, ProductCategoryComponent, ProductFilterComponent, ProductDetailComponent],
   imports: [
     CommonModule,
     ProductRoutingModule
