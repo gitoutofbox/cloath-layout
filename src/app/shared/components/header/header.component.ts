@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   currentUser: User;
+  showModal = false;
 
   constructor(
     private router: Router,

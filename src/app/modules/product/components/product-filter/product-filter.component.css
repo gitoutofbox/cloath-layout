@@ -4,4 +4,8 @@
 .product-filter .dropdown {
   width: auto;
   float: right;
+  margin-right: 10px;
+}
+.product-filter .dropdown:first-child {
+  margin-right: 0;
 }

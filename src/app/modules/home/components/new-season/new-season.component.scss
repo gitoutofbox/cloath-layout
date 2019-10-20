@@ -1,0 +1,49 @@
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size:40px; 
+    
+  }
+  a:before {
+    content: attr(data-hover);
+    position: absolute;
+    color: red;
+    left: 0;
+    width: 0;
+    transition: width 1s;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  a:hover:before {
+    width: 100%;
+  }
+
+
+  @keyframes color-change {
+    0% { color: rgb(27, 236, 62); }
+    50% { color: rgb(138, 204, 77); }
+    100% { color: #000; }
+  }
+  ul {
+    li {
+      a{animation: color-change 1s infinite;}
+    }
+    li:nth-child(4) {
+      a{animation-delay: 0ms;}
+      
+    }
+    li:nth-child(3) {
+      a{animation-delay: 200ms;}
+      
+    }
+    li:nth-child(2) {
+      a{animation-delay: 400ms;}
+      
+    }
+    li:nth-child(1) {
+      a{animation-delay: 800ms;}
+      
+    }
+  }

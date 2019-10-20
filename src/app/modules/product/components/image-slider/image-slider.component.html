@@ -1,1 +1,16 @@
-<p>image-slider works!</p>
+<div class="row">
+    <div class="col-sm-6 product-images">
+        <div class="main-image"><img src="{{selectedImage.path}}" /></div>
+
+        <div class="other-images no-gutters">
+            <a  (click)="selectedImage = item" *ngFor="let item of product.images; let i = index">
+                <img src="{{item.path}}" />
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6 product-detail">
+        <h1 class="product-desc">{{product.name}}</h1>
+        <h2>{{product.desc}}</h2>
+        <div>{{product.price}}</div>
+    </div>    
+</div>

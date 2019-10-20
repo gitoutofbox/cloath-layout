@@ -1,4 +1,10 @@
 .product-filter{
     text-align: right;
-    .dropdown{width: auto; float:right;}
+    margin-right: 155px;
+    .dropdown{
+        width: auto; float:right; margin-right: 10px;
+        &:first-child {
+            margin-right: 0;
+        }
+    }
 }

@@ -1,0 +1,27 @@
+.product-images  {
+    text-align: center;
+    position: relative;    
+    .main-image {
+        max-height:500px;
+        overflow: hidden;
+        img{
+            max-width: 100%;
+        }        
+    }
+    .other-images{
+        bottom: -100px;
+        position: absolute;
+        border:0px solid red;        
+        width: calc(100% - 30px);
+        a{
+            width:50px;
+            margin:0 5px;
+            display: inline-block;
+            cursor: pointer;
+            img{
+              max-width: 100%;  
+            }
+        }
+        
+    }
+}

@@ -1,9 +1,18 @@
 <nav class="navbar navbar-expand-sm navbar-dark">
-  <span>logo</span>
+  <a  routerLink="home">logo</a>
 
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item"><a class=" nav-link" routerLink="home">Info</a></li>
-    <li class="nav-item"><a class=" nav-link" routerLink="idea">Idea</a></li>
-    <li class="nav-item"><a class=" nav-link" routerLink="cart">Cart</a></li>
+    <li class="nav-item"><a class=" nav-link" routerLink="home"  (click)="showModal = true"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+    <li class="nav-item"><a class=" nav-link" routerLink="idea"  (click)="showModal = true"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
+    <li class="nav-item"><a class=" nav-link" routerLink="cart"  (click)="showModal = true"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
   </ul>
 </nav>
+
+<app-modal-window [showModal]="showModal">
+  <span class="header">Header</span>
+  <div class="body">Body</div>
+  <div class="footer">
+    <button class="btn btn-secondary" (click)="showModal = false">Close</button>
+   <button class="btn btn-primary" (click)="showModal = false">OK</button>
+  </div>
+</app-modal-window>

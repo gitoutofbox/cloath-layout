@@ -1,5 +1,5 @@
-<ul>
-  <li *ngFor="let item of users; let i = index">
+<ul class="user-block-main">
+  <li *ngFor="let item of users; let i = index"  class="user-block">
     <div>
       <a [routerLink]="['../../product']">{{i + 1}} {{item.displayText}}</a>
     </div>

@@ -3,5 +3,15 @@
     height: 50px;
     border-radius: 50px;
     overflow: hidden;
-    float:left;
+    // float:left;
+    display: inline-block;
+    img{max-height: 100%;}
+}
+li{position: relative; height:50px;}
+a{
+    position: absolute;
+}
+a:hover{
+    transition: all 0.5s;
+    transform: translateX(-10px);
 }

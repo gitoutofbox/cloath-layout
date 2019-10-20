@@ -1,5 +1,7 @@
-body{background:#000; color:#fff;}
-
+body{background:#000; color:#fff;
+   font-family: 'Alfa Slab One', cursive;}
+a{cursor: pointer; text-decoration: none;}
+a:hover{text-decoration: none;}
 ul {
     margin:0; 
     padding:0;
@@ -11,3 +13,5 @@ ul {
        width:100%;
     }
  }
+
+ .fa{font-size:2rem}

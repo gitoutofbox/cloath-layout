@@ -1,0 +1,12 @@
+.main{
+    margin-left:-200px;
+    &:after {
+            content:" "; 
+            width: 500px;
+            height: 700px;
+            background-image: url('/assets/images/products/1/photo.jpg');
+            background-repeat:  no-repeat;
+            position: absolute; right:100px; top:70px;
+            opacity:0.5;
+        }
+    }

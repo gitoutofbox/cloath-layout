@@ -1,0 +1,15 @@
+body {
+  background: #fff;
+  color: #000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  float: left;
+  width: 100%;
+}
